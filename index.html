@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Fontdiner Swanky' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="assets/javascript/game.js"></script>
+    <style>
+
+        .crystal-1, .crystal-2, .crystal-3, .crystal-4 {
+          width: 100px;
+          height: 100px;
+        }
+      </style>
+</head>
+<body style="background-image: url('assets/images/gplaypattern_@2X.png')">
+    <div class="popup">
+        <span class="popuptext" id="myPopup"></span>
+        </div>
+    <div id='banner' class = 'text-center'>
+        <h1>CRYSTAL COLLECTOR</h1>
+    </div>
+    <div class = 'container'>
+        <div class = 'row'>
+            <div class = 'col-md-12 directions text-muted pt-3 bg-white mb-3 border border-2px-secondary'>
+                <p>The four crystals below have random values assigned.  Please click on a crystal to add points to your total points.</p>
+                <p>You win the game by matching your total points to the target number, you lose the game if your total points exceed the target number.</p>
+            </div>
+        </div>
+    <div class = 'row'>
+        <div class = 'col-md-4'></div>
+        <div class = 'col-md-4 text-center tNum'>Target Number</div>
+        <div class = 'col-md-4'></div>
+        </div>
+    <div class = 'row'>
+        <div class = 'col-md-4'></div>
+        <div class = 'col-md-4 text-center randNum'></div>
+        <div class = 'col-md-4'></div>
+    </div>
+    <div class = 'row'>
+        <div class = 'col-md-3'></div>
+        <div class = 'col-md-6 float-left  border p-4 mt-3 bg-white crystals'>
+
+    <img class="crystal-1" src="assets/images/purpleHeart.jpg" alt="crystal-1">
+
+    <img class="crystal-2" src="assets/images/yellowGem.jpg" alt="crystal-2">
+
+    <img class="crystal-3" src="assets/images/redGem.jpg" alt="crystal-3">
+
+    <img class="crystal-4" src="assets/images/bluePurpGem.jpg" alt="crystal-4">
+
+    </div>
+    <div class = 'col-md-3'></div>
+</div>
+<div class = 'row'>
+        <div class = 'col-md-4'></div>
+        <div class = 'col-md-4 text-center pArea mt-3'>
+            Your total points is
+            <div class = 'points'></div>
+        </div>
+        <div class = 'col-md-4'></div>
+    <div class = 'col-md-3 text-center p-3 text-muted float-left' id = 'wins'></div>
+    <div class = 'col-md-3 text-center p-3 text-muted float-left' id = 'clicks'></div>
+    <div class = 'col-md-3 text-center p-3 text-muted float-left' id = 'best'></div>
+    <div class = 'col-md-3 text-center p-3 text-muted float-left' id = 'losses'></div>
+</div>
+</div>
+</body>
+
+</html>
