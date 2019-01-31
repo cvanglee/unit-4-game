@@ -30,6 +30,10 @@ body {
     color: slateblue;
     background-color: lavender;
 }
+.crystal-1, .crystal-2, .crystal-3, .crystal-4 {
+    width: 100px;
+    height: 100px;
+  }
 .crystals img {
     margin-left: 22px;
 }
